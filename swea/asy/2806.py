@@ -21,8 +21,8 @@ def set_queen(x, y):
 def remove_queen(x, y):
   board[x][y] = False
   for i in range (n):
-    attack[x][i] -= 1 # 가로
-    attack[i][y] -= 1 # 세로
+    attack[x][i] -= 1 # 세로
+    attack[i][y] -= 1 # 가로
     # 대각선
     if x + i < n and y + i < n:
       attack[x+i][y+i] -= 1
